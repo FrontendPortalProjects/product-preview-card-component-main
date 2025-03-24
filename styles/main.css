@@ -296,12 +296,12 @@ a[class] {
   }
 }
 .card__preview {
-  background: url("../../images/image-product-desktop.jpg") no-repeat center/cover;
+  background: url("../images/image-product-desktop.jpg") no-repeat center/cover;
   border-radius: 0.625rem 0 0 0.625rem;
 }
 @media (width <= 36.06125rem) {
   .card__preview {
-    background: url("../../images/image-product-mobile.jpg") no-repeat center/cover;
+    background: url("../images/image-product-mobile.jpg") no-repeat center/cover;
     border-radius: 0.625rem 0.625rem 0 0;
   }
 }
