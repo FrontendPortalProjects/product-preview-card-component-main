@@ -1,0 +1,17 @@
+@use "../helpers/index" as *;
+
+.attribution {
+  font-size: fluid(16, 12);
+  padding-block: fluid(10, 8);
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-black);
+
+  &__link {
+    color: var(--color-green-500);
+
+    &:hover {
+      color: var(--color-gray);
+    }
+  }
+}

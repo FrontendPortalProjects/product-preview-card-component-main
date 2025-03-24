@@ -1,0 +1,18 @@
+@use 'helpers' as *;
+
+:root {
+  --color-green-500: hsl(158, 36%, 37%);
+  --color-green-700: hsl(158, 42%, 18%);
+  --color-black: hsl(212, 21%, 14%);
+  --color-gray: hsl(228, 12%, 48%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --container-width: #{rem(1440)};
+  --container-padding-x: #{rem(16)};
+
+  --transition-duration: 0.2s;
+
+  --font-family-base: "Montserrat", sans-serif;
+  --font-family-accent: "Fraunces", sans-serif;
+}

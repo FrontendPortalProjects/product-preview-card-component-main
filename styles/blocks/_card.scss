@@ -1,0 +1,87 @@
+@use "../helpers/" as *;
+
+.card {
+  font-family: "Montserrat";
+  background: var(--color-white);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: rem(600);
+  border-radius: rem(10);
+
+  @include mobile {
+    grid-template-columns: none;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__preview {
+    background: url("../../images/image-product-desktop.jpg") no-repeat
+      center/cover;
+    border-radius: rem(10) 0 0 rem(10);
+
+    @include mobile {
+      background: url("../../images/image-product-mobile.jpg") no-repeat
+        center/cover;
+    border-radius: rem(10) rem(10) 0 0;
+    }
+  }
+
+  &__body {
+    padding: fluid(30, 20);
+    display: flex;
+    flex-direction: column;
+    row-gap: fluid(25, 20);
+  }
+
+  &__category {
+    font-weight: 500;
+    font-size: rem(12);
+    text-transform: uppercase;
+    color: var(--color-gray);
+    letter-spacing: 0.313rem;
+  }
+
+  &__title {
+    font-family: var(--font-family-accent);
+    line-height: 1;
+  }
+
+  &__description {
+    color: var(--color-gray);
+    font-size: fluid(14, 12);
+  }
+
+  &__price {
+    display: flex;
+    align-items: center;
+    column-gap: fluid(20, 16);
+
+    &--now {
+      color: var(--color-green-500);
+      font-family: var(--font-family-accent);
+      font-size: fluid(32, 24);
+    }
+
+    &--old {
+      text-decoration: line-through;
+      color: var(--color-gray);
+      font-size: fluid(12, 10);
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    column-gap: rem(10);
+    padding-block: rem(10);
+    border-radius: rem(10);
+    justify-content: center;
+    border: none;
+    background-color: var(--color-green-500);
+    color: var(--color-white);
+
+    @include hover {
+      color: var(--color-green-500);
+      background-color: var(--color-cream);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use 'helpers' as *;
+
+body {
+  background: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-base);
+}
+
+a,
+button {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: inherit;
+
+  &[class] {
+    text-decoration: none;
+  }
+}
+
+:focus-visible {
+  outline: rem(2) dashed var(--color-black);
+  outline-offset: rem(4);
+  transition-duration: 0s !important;
+}
